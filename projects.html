@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selected software, data, and Arduino projects by Ritwik." />
+    <meta name="theme-color" content="#f8f6f1" />
+    <title>Projects — Ritwik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ritwik, home"><span class="brand-mark">R</span><span>Ritwik</span></a>
+      <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="about.html">About</a><a href="experience.html">Experience</a><a href="skills.html">Skills</a><a href="projects.html" aria-current="page">Projects</a><a href="achievements.html">Achievements</a><a href="contact.html">Contact <span class="nav-arrow" aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.6A8.5 8.5 0 0 1 8.4 3.8 8.6 8.6 0 1 0 20.2 15.6Z" /></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+      </button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+    </header>
+    <main class="page-main">
+      <section class="page-hero section-shell">
+        <p class="eyebrow">PROJECTS / 03</p>
+        <h1>Ideas made<br /><span>useful.</span></h1>
+        <p>Software and hardware projects focused on practical problems, thoughtful design, and learning by building.</p>
+      </section>
+      <section class="projects section-shell content-section">
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual visual-finstep" aria-hidden="true">
+              <span class="visual-label">01 / FINTECH</span>
+              <span class="finstep-wordmark">fin<span>step</span></span>
+              <span class="finstep-caption">Your money,<br />in one clear view.</span>
+              <span class="finstep-ui"><span>ACCOUNTS <b>MULTIPLE</b></span><span class="finstep-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span>SMALL STEPS. SMARTER HABITS.</span></span>
+            </div>
+            <div class="project-meta"><div><h3>FinStep</h3><p>Connects multiple banking apps in one dashboard, helping young people and adults see where their money is held, check balances across accounts, and take small steps toward micro-investing. Actively used by young adults.</p></div></div>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>UI/UX Design</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-donation" aria-hidden="true">
+              <span class="visual-label">02 / HEALTHCARE</span><span class="donation-cross">+</span><span class="donation-title">DONOR<br />CONNECT</span><span class="donation-records"><i></i><i></i><i></i><i></i></span>
+            </div>
+            <div class="project-meta"><div><h3>Blood Donation Management System</h3><p>Organizes blood-donation camp information and a blood-center directory. I worked with hospitals to compile which blood groups they have available and where, building a structured dataset for the system used at my school.</p></div></div>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>Database Management</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-rover" aria-hidden="true">
+              <span class="visual-label">03 / ROBOTICS</span><span class="rover-art"><i class="rover-wheel"></i><i class="rover-chassis"></i><i class="rover-sensor"></i><i class="rover-wheel"></i></span><span class="rover-caption">DETECT. ADAPT. MOVE.</span>
+            </div>
+            <div class="project-meta"><div><h3>Obstacle-Avoiding Robot</h3><p>A two-wheel rover that uses an ultrasonic sensor to detect obstacles and steer around them automatically.</p></div></div>
+            <div class="tag-list"><span>Arduino</span><span>Ultrasonic sensor</span><span>Robotics</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-radar" aria-hidden="true">
+              <span class="visual-label">04 / ELECTRONICS</span><span class="radar-scope"><i></i><i></i><i></i><b></b></span><span class="radar-caption">ARDUINO<br />RADAR SYSTEM</span>
+            </div>
+            <div class="project-meta"><div><h3>Arduino Radar System</h3><p>An ultrasonic sensor on a rotating servo sweeps nearby areas and maps detected objects on a PC screen.</p></div></div>
+            <div class="tag-list"><span>Arduino</span><span>Ultrasonic sensor</span><span>Servo motor</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-drone" aria-hidden="true">
+              <span class="visual-label">05 / UAV SYSTEMS</span>
+              <span class="drone-frame">
+                <i class="drone-arm"></i><i class="drone-arm"></i><i class="drone-arm"></i><i class="drone-arm"></i>
+                <i class="drone-motor"></i><i class="drone-motor"></i><i class="drone-motor"></i><i class="drone-motor"></i>
+                <i class="drone-body"></i><i class="drone-controller"></i>
+              </span>
+              <span class="drone-caption">BUILT FROM<br />THE GROUND UP</span>
+            </div>
+            <div class="project-meta"><div><h3>Multi-Rotor UAV</h3><p>Designed, assembled, and calibrated a multi-rotor UAV from the ground up, integrating flight-controller hardware, ESCs, brushless motors, and telemetry systems.</p></div></div>
+            <div class="tag-list"><span>Flight controller</span><span>ESCs</span><span>Brushless motors</span><span>Telemetry</span></div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer section-shell">
+      <a class="brand footer-brand" href="index.html"><span class="brand-mark">R</span><span>Ritwik</span></a><p>Designed with intention. Built with care.</p><span>© <span id="current-year">2026</span> RITWIK</span><a class="back-top" href="projects.html">BACK TO TOP ↑</a>
+    </footer>
+  </body>
+</html>
