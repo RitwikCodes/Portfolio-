@@ -229,6 +229,14 @@ button { font: inherit; }
 .card-footer span:last-child span { color: var(--lime); }
 .pin-icon { color: var(--lime); font-size: 14px; }
 .card-decoration { position: absolute; right: 30px; bottom: 70px; color: rgba(255,255,255,.035); font-size: 120px; font-weight: 800; letter-spacing: -.1em; }
+.internship-feature { padding-top: 36px; padding-bottom: 90px; }
+.internship-card { min-height: 370px; padding: 34px 48px 24px; }
+.internship-card .profile-main { margin: 42px 0 40px; }
+.internship-card .avatar { width: 140px; height: 140px; background: #f8f6f1; }
+.internship-card .internship-company-mark > span { color: #4285f4; font-size: 64px; font-weight: 800; }
+.internship-card .profile-intro h1 { margin: 0; font-size: clamp(42px, 7vw, 72px); line-height: 1.1; letter-spacing: -.06em; }
+.internship-card .profile-intro > p:last-child { font-size: 14px; }
+.internship-card .card-decoration { right: 40px; bottom: 35px; font-size: clamp(100px, 18vw, 180px); }
 .hero-index { position: absolute; left: 0; bottom: 51px; color: var(--muted); font: 10px var(--mono); letter-spacing: .08em; }
 .hero .floating-note {
   display: none;
@@ -481,9 +489,7 @@ button { font: inherit; }
   .contact-panel { align-items: flex-start; flex-direction: column; gap: 28px; padding: 37px 32px; }
   .contact-actions { flex-wrap: wrap; }
 }
-@media (max-width: 620px) {
-  html { scroll-padding-top: 78px; }
-  .section-shell { width: calc(100% - 40px); }
+@media (max-width: 850px) {
   .site-header { top: 12px; width: calc(100% - 28px); height: 58px; padding: 0 15px; }
   .brand { gap: 8px; font-size: 13px; }
   .brand-mark { width: 33px; height: 33px; }
@@ -520,6 +526,10 @@ button { font: inherit; }
   .site-nav.is-open { display: flex; }
   .site-nav a { padding: 13px 4px; border-bottom: 1px solid var(--line); }
   .site-nav a:last-child { border-bottom: 0; }
+}
+@media (max-width: 620px) {
+  html { scroll-padding-top: 78px; }
+  .section-shell { width: calc(100% - 40px); }
   .page-main { padding-top: 102px; }
   .page-hero { padding-top: 29px; padding-bottom: 30px; }
   .page-hero h1 { margin-top: 16px; font-size: clamp(42px, 11vw, 62px); }
@@ -541,6 +551,14 @@ button { font: inherit; }
   .profile-intro > p:last-child { font-size: 11px; }
   .card-footer { font-size: 8px; }
   .card-decoration { font-size: 85px; }
+  .internship-feature { padding-top: 25px; padding-bottom: 60px; }
+  .internship-card { min-height: 300px; padding: 21px 17px 15px; }
+  .internship-card .profile-main { margin: 32px 0; }
+  .internship-card .avatar { width: 106px; height: 106px; }
+  .internship-card .internship-company-mark > span { font-size: 48px; }
+  .internship-card .profile-intro h1 { font-size: clamp(34px, 10vw, 48px); }
+  .internship-card .profile-intro > p:last-child { font-size: 11px; }
+  .internship-card .card-decoration { right: 18px; bottom: 40px; font-size: 82px; }
   .hero-index { display: none; }
   .floating-note { display: none; width: 52px; height: 52px; }
   .floating-note svg { width: 30px; }
